@@ -12,7 +12,7 @@ const BUILD = 'eab7be559e0cf41175ea24fada87ee8eebbbcf2a';
  *
  * new DiepSocket(link[, proxy][,options])
  *  - link {String] The party link from the server.
- *  - proxy {String} The http proxy that will be used.
+ *  - proxy {String} The socks proxy that will be used.
  *  - options {Object}
  * 	    - timeout: How long the connection is allowed to take to establish.
  *                  Default 30 seconds.
