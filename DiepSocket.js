@@ -1,7 +1,7 @@
 'use strict';
 
 const EventEmitter = require('events');
-const HttpsProxyAgent = require('socks-proxy-agent');
+const SocksProxyAgent = require('socks-proxy-agent');
 const WebSocket = require('ws');
 const url = require('url');
 
