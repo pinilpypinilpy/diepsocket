@@ -1,7 +1,7 @@
 'use strict';
 
 const EventEmitter = require('events');
-const HttpsProxyAgent = require('https-proxy-agent');
+const HttpsProxyAgent = require('socks-proxy-agent');
 const WebSocket = require('ws');
 const url = require('url');
 
@@ -116,7 +116,7 @@ class DiepSocket extends EventEmitter {
             rejectUnauthorized: false,
         };
         if (proxy) {
-            const agent = new HttpsProxyAgent(url.parse(`http://${proxy}`));
+            const agent = new SocksProxyAgent(url.parse(`socks://${proxy}`));
             socketOptions.agent = agent;
         }
 
